@@ -1,0 +1,304 @@
+[
+  {
+    "id": 1,
+    "scenario": "You find a lost wallet with cash and an ID card inside. What do you do?",
+    "options": [
+      { "text": "Return it with everything inside", "tags": ["altruistic", "honest"] },
+      { "text": "Take the cash and return the wallet", "tags": ["selfish", "pragmatic"] },
+      { "text": "Leave it where it is and walk away", "tags": ["avoidant"] }
+    ]
+  },
+  {
+    "id": 2,
+    "scenario": "A close friend asks you to lie to their partner to cover for them. What do you do?",
+    "options": [
+      { "text": "Refuse and encourage them to be honest", "tags": ["honest", "principled"] },
+      { "text": "Lie to protect your friend", "tags": ["loyal", "deceptive"] },
+      { "text": "Avoid answering and change the subject", "tags": ["avoidant", "conflict_averse"] },
+      { "text": "Tell the partner the truth", "tags": ["honest", "direct", "justice_oriented"] }
+    ]
+  },
+  {
+    "id": 3,
+    "scenario": "At work you notice a colleague taking small office supplies home regularly. What do you do?",
+    "options": [
+      { "text": "Talk to them privately about it", "tags": ["responsible", "empathetic"] },
+      { "text": "Report it to your manager", "tags": ["rule_following", "justice_oriented"] },
+      { "text": "Ignore it because it's minor", "tags": ["pragmatic", "avoidant"] }
+    ]
+  },
+  {
+    "id": 4,
+    "scenario": "You discover an error in your favor on an invoice (you were undercharged). What do you do?",
+    "options": [
+      { "text": "Notify the company and pay the difference", "tags": ["honest", "fair"] },
+      { "text": "Say nothing and keep the benefit", "tags": ["selfish", "opportunistic"] },
+      { "text": "Wait to see if they notice first", "tags": ["risk_averse", "pragmatic"] }
+    ]
+  },
+  {
+    "id": 5,
+    "scenario": "You can help a stranger with directions, but you're already late. What do you do?",
+    "options": [
+      { "text": "Stop and help them properly", "tags": ["altruistic", "empathetic"] },
+      { "text": "Give a quick answer and leave", "tags": ["pragmatic", "helpful"] },
+      { "text": "Pretend you didn't hear and move on", "tags": ["selfish", "avoidant"] }
+    ]
+  },
+  {
+    "id": 6,
+    "scenario": "Your team can meet a deadline only by skipping some testing. What do you do?",
+    "options": [
+      { "text": "Insist on testing even if the deadline slips", "tags": ["responsible", "quality_focused"] },
+      { "text": "Skip testing to hit the deadline", "tags": ["results_driven", "risk_tolerant"] },
+      { "text": "Suggest a smaller scope to keep both quality and time", "tags": ["pragmatic", "problem_solver"] },
+      { "text": "Let the manager decide and follow along", "tags": ["deferential", "conflict_averse"] }
+    ]
+  },
+  {
+    "id": 7,
+    "scenario": "You hear a harmful rumor about someone. Sharing it could make you fit in. What do you do?",
+    "options": [
+      { "text": "Do not share it and discourage others from spreading it", "tags": ["kind", "responsible"] },
+      { "text": "Share it with a few people you trust", "tags": ["social", "careless"] },
+      { "text": "Ask where it came from and verify before reacting", "tags": ["skeptical", "fair"] }
+    ]
+  },
+  {
+    "id": 8,
+    "scenario": "You see someone shoplifting basic food items. What do you do?",
+    "options": [
+      { "text": "Report them immediately", "tags": ["rule_following", "justice_oriented"] },
+      { "text": "Do not report, but reflect on why it might be happening", "tags": ["empathetic", "context_sensitive"] },
+      { "text": "Offer to pay for the items if possible", "tags": ["altruistic", "empathetic"] },
+      { "text": "Ignore it and leave", "tags": ["avoidant", "conflict_averse"] }
+    ]
+  },
+  {
+    "id": 9,
+    "scenario": "A teacher gives you points by mistake that improve your grade. What do you do?",
+    "options": [
+      { "text": "Tell the teacher and accept the corrected grade", "tags": ["honest", "principled"] },
+      { "text": "Keep quiet and accept the better grade", "tags": ["selfish", "opportunistic"] },
+      { "text": "Hint at the mistake without insisting", "tags": ["conflict_averse", "honest"] }
+    ]
+  },
+  {
+    "id": 10,
+    "scenario": "You can choose between a cheaper product with questionable labor practices and a more expensive ethical alternative. What do you do?",
+    "options": [
+      { "text": "Buy the ethical alternative even if it costs more", "tags": ["ethical_consumer", "principled"] },
+      { "text": "Buy the cheaper option because budget matters", "tags": ["pragmatic", "budget_conscious"] },
+      { "text": "Research more and delay the purchase", "tags": ["deliberative", "skeptical"] },
+      { "text": "Avoid buying either for now", "tags": ["avoidant", "minimalist"] }
+    ]
+  },
+
+  {
+    "id": 11,
+    "scenario": "A runaway trolley is heading toward five people on the track. You can pull a lever to divert it to another track where it will hit one person. What do you do?",
+    "options": [
+      { "text": "Pull the lever to save five", "tags": ["utilitarian", "harm_tradeoff", "decisive"] },
+      { "text": "Do not pull the lever", "tags": ["deontological", "non_intervention", "principled"] },
+      { "text": "Freeze and do nothing", "tags": ["avoidant", "overwhelmed"] }
+    ]
+  },
+  {
+    "id": 12,
+    "scenario": "In a variant of the trolley problem, you could stop the trolley by pushing a very large man off a bridge, which would kill him but save five. What do you do?",
+    "options": [
+      { "text": "Push him to save five", "tags": ["utilitarian", "ends_justify_means", "risk_tolerant"] },
+      { "text": "Do not push him", "tags": ["deontological", "do_no_harm", "principled"] },
+      { "text": "Look for another way even if uncertain", "tags": ["problem_solver", "hopeful", "deliberative"] }
+    ]
+  },
+  {
+    "id": 13,
+    "scenario": "A person you care about needs a lifesaving medicine they cannot afford. You could steal it from a pharmacy. What do you do?",
+    "options": [
+      { "text": "Steal the medicine", "tags": ["care_based", "rule_breaking", "harm_reduction"] },
+      { "text": "Do not steal; seek legal alternatives", "tags": ["rule_following", "principled", "deliberative"] },
+      { "text": "Pressure the pharmacist publicly", "tags": ["activist", "direct", "justice_oriented"] }
+    ]
+  },
+  {
+    "id": 14,
+    "scenario": "You and several others are in an overcrowded lifeboat during a storm. If nobody leaves, everyone may die. What do you do?",
+    "options": [
+      { "text": "Support a lottery to decide who leaves", "tags": ["procedural_fairness", "tragic_choice", "utilitarian"] },
+      { "text": "Refuse to choose; everyone stays", "tags": ["deontological", "non_intervention", "principled"] },
+      { "text": "Volunteer yourself", "tags": ["self_sacrifice", "altruistic", "courageous"] }
+    ]
+  },
+  {
+    "id": 15,
+    "scenario": "A prosecutor offers you a plea deal: if you testify against someone you believe is innocent, you’ll avoid jail. What do you do?",
+    "options": [
+      { "text": "Refuse to lie, even if it costs you", "tags": ["honest", "principled", "courageous"] },
+      { "text": "Lie to protect yourself", "tags": ["self_preserving", "deceptive", "pragmatic"] },
+      { "text": "Ask for more time and legal advice", "tags": ["deliberative", "risk_averse"] }
+    ]
+  },
+
+  { "id": 16, "scenario": "You witness a minor car accident. The other driver offers you money to say you didn't see anything. What do you do?", "options": [ { "text": "Refuse and give an honest statement", "tags": ["honest", "justice_oriented"] }, { "text": "Accept the money and stay silent", "tags": ["opportunistic", "deceptive"] }, { "text": "Avoid involvement and leave", "tags": ["avoidant", "conflict_averse"] } ] },
+  { "id": 17, "scenario": "You find a phone with emergency contacts visible. The owner looks panicked nearby. What do you do?", "options": [ { "text": "Return it immediately", "tags": ["helpful", "honest"] }, { "text": "Wait to see if someone claims it", "tags": ["risk_averse", "pragmatic"] }, { "text": "Keep it to sell later", "tags": ["selfish", "opportunistic"] } ] },
+  { "id": 18, "scenario": "A coworker confides they are struggling and missing deadlines. Your manager asks why performance is slipping. What do you do?", "options": [ { "text": "Share only what is necessary and protect privacy", "tags": ["privacy_respecting", "balanced", "responsible"] }, { "text": "Disclose everything to protect the team", "tags": ["team_loyal", "results_driven"] }, { "text": "Refuse to say anything", "tags": ["privacy_respecting", "principled"] } ] },
+  { "id": 19, "scenario": "You accidentally receive a confidential email not meant for you. What do you do?", "options": [ { "text": "Notify the sender and delete it", "tags": ["honest", "privacy_respecting"] }, { "text": "Read it out of curiosity", "tags": ["curious", "boundary_crossing"] }, { "text": "Forward it to someone else", "tags": ["careless", "harmful"] } ] },
+  { "id": 20, "scenario": "A charity fundraiser exaggerates statistics to get donations for a good cause. Do you support the tactic?", "options": [ { "text": "No—truth matters even for good causes", "tags": ["honest", "principled"] }, { "text": "Yes—helping more people is worth it", "tags": ["utilitarian", "ends_justify_means"] }, { "text": "Support the cause but insist on accurate messaging", "tags": ["balanced", "responsible", "problem_solver"] } ] },
+
+  { "id": 21, "scenario": "A friend asks for your honest opinion about their work, but you know it will hurt them. What do you do?", "options": [ { "text": "Be honest and kind", "tags": ["honest", "empathetic"] }, { "text": "Praise it to protect their feelings", "tags": ["conflict_averse", "kind"] }, { "text": "Give vague feedback and avoid specifics", "tags": ["avoidant", "conflict_averse"] } ] },
+  { "id": 22, "scenario": "You see someone being verbally harassed on public transport. What do you do?", "options": [ { "text": "Intervene directly", "tags": ["courageous", "protective"] }, { "text": "Call for help / alert staff", "tags": ["responsible", "safety_first"] }, { "text": "Do nothing to avoid risk", "tags": ["risk_averse", "avoidant"] } ] },
+  { "id": 23, "scenario": "A teammate takes credit for your work in a meeting. What do you do?", "options": [ { "text": "Correct the record politely", "tags": ["assertive", "fairness"] }, { "text": "Confront them privately later", "tags": ["conflict_managed", "responsible"] }, { "text": "Let it go to keep peace", "tags": ["conflict_averse", "avoidant"] } ] },
+  { "id": 24, "scenario": "You can report a safety issue that will delay a project and upset leadership. What do you do?", "options": [ { "text": "Report it immediately", "tags": ["safety_first", "courageous", "responsible"] }, { "text": "Fix it quietly without reporting", "tags": ["problem_solver", "pragmatic"] }, { "text": "Ignore it unless someone gets hurt", "tags": ["careless", "results_driven"] } ] },
+  { "id": 25, "scenario": "Your neighbor plays loud music late every night. What do you do?", "options": [ { "text": "Talk to them calmly", "tags": ["direct", "conflict_managed"] }, { "text": "Call authorities without warning", "tags": ["rule_following", "strict"] }, { "text": "Say nothing and suffer", "tags": ["avoidant", "conflict_averse"] } ] },
+
+  { "id": 26, "scenario": "You discover your company collects more user data than needed. What do you do?", "options": [ { "text": "Raise the issue and push for minimization", "tags": ["privacy_respecting", "responsible", "courageous"] }, { "text": "Do nothing—it's legal", "tags": ["rule_following", "complacent"] }, { "text": "Leak it to the press", "tags": ["whistleblower", "risk_tolerant", "justice_oriented"] } ] },
+  { "id": 27, "scenario": "A social media post about someone is going viral with false info. You can correct it but may get attacked. What do you do?", "options": [ { "text": "Correct it with evidence", "tags": ["truth_seeking", "courageous"] }, { "text": "Report it quietly", "tags": ["responsible", "risk_averse"] }, { "text": "Stay out of it", "tags": ["avoidant", "self_preserving"] } ] },
+  { "id": 28, "scenario": "You can get a friend a job by recommending them, but they are not qualified. What do you do?", "options": [ { "text": "Do not recommend them", "tags": ["fairness", "principled"] }, { "text": "Recommend them anyway", "tags": ["loyal", "nepotism"] }, { "text": "Recommend them only for a role they can do", "tags": ["balanced", "pragmatic"] } ] },
+  { "id": 29, "scenario": "A restaurant gives you the wrong order, but it’s better and they didn’t notice. What do you do?", "options": [ { "text": "Tell them and correct it", "tags": ["honest", "fair"] }, { "text": "Keep it and say nothing", "tags": ["opportunistic", "selfish"] }, { "text": "Ask if you can keep it and pay the difference", "tags": ["honest", "pragmatic"] } ] },
+  { "id": 30, "scenario": "You see a lost child crying in a store. What do you do?", "options": [ { "text": "Help them find staff/parents immediately", "tags": ["protective", "responsible"] }, { "text": "Ask someone else to handle it", "tags": ["deferential", "avoidant"] }, { "text": "Ignore it", "tags": ["careless", "avoidant"] } ] },
+
+  { "id": 31, "scenario": "You could donate a small amount that won’t affect you, but you’re not obligated. What do you do?", "options": [ { "text": "Donate", "tags": ["altruistic", "generous"] }, { "text": "Do not donate", "tags": ["self_preserving", "pragmatic"] }, { "text": "Donate only if friends are watching", "tags": ["image_conscious", "social"] } ] },
+  { "id": 32, "scenario": "You find a bug in an online store that lets you get expensive items for free. What do you do?", "options": [ { "text": "Report the bug", "tags": ["honest", "responsible"] }, { "text": "Exploit it", "tags": ["opportunistic", "rule_breaking"] }, { "text": "Ignore it", "tags": ["avoidant", "pragmatic"] } ] },
+  { "id": 33, "scenario": "You overhear a friend planning to cheat on an exam. What do you do?", "options": [ { "text": "Encourage them not to", "tags": ["responsible", "kind"] }, { "text": "Report them", "tags": ["rule_following", "justice_oriented"] }, { "text": "Say nothing", "tags": ["loyal", "avoidant"] } ] },
+  { "id": 34, "scenario": "You can save money by using software without paying for it. What do you do?", "options": [ { "text": "Pay or use a free alternative", "tags": ["rule_following", "fair"] }, { "text": "Pirate it", "tags": ["opportunistic", "rule_breaking"] }, { "text": "Ask for a student/discount license", "tags": ["pragmatic", "problem_solver"] } ] },
+  { "id": 35, "scenario": "You witness a friend being rude to service staff. What do you do?", "options": [ { "text": "Call it out and apologize to staff", "tags": ["courageous", "respectful"] }, { "text": "Talk privately later", "tags": ["conflict_managed", "responsible"] }, { "text": "Ignore it to avoid conflict", "tags": ["conflict_averse", "avoidant"] } ] },
+
+  { "id": 36, "scenario": "A homeless person asks for money. You’re unsure if it helps. What do you do?", "options": [ { "text": "Give money or food", "tags": ["compassionate", "altruistic"] }, { "text": "Decline and donate to a shelter later", "tags": ["strategic", "responsible"] }, { "text": "Ignore and walk away", "tags": ["avoidant", "self_preserving"] } ] },
+  { "id": 37, "scenario": "You can return an item you used once, even though it’s against the store’s policy. What do you do?", "options": [ { "text": "Do not return it", "tags": ["honest", "rule_following"] }, { "text": "Return it and claim it’s unused", "tags": ["deceptive", "opportunistic"] }, { "text": "Ask about an exception honestly", "tags": ["honest", "pragmatic"] } ] },
+  { "id": 38, "scenario": "A coworker asks you to cover their shift, but you need rest. What do you do?", "options": [ { "text": "Help them this time", "tags": ["helpful", "loyal"] }, { "text": "Say no and set a boundary", "tags": ["self_care", "assertive"] }, { "text": "Agree but resent it", "tags": ["conflict_averse", "people_pleasing"] } ] },
+  { "id": 39, "scenario": "You find out a small local business underpays staff. You like their products. What do you do?", "options": [ { "text": "Stop supporting them and tell others", "tags": ["justice_oriented", "ethical_consumer"] }, { "text": "Keep buying; it’s not your responsibility", "tags": ["pragmatic", "detached"] }, { "text": "Talk to the owner or staff first", "tags": ["deliberative", "fair"] } ] },
+  { "id": 40, "scenario": "A family member asks you to keep a secret that could harm them later. What do you do?", "options": [ { "text": "Keep it but encourage help", "tags": ["loyal", "care_based"] }, { "text": "Tell someone who can help", "tags": ["protective", "responsible"] }, { "text": "Refuse to be involved", "tags": ["avoidant", "self_preserving"] } ] },
+
+  { "id": 41, "scenario": "You’re offered a bribe to speed up paperwork. What do you do?", "options": [ { "text": "Refuse and report it", "tags": ["integrity", "justice_oriented"] }, { "text": "Accept it", "tags": ["corrupt", "opportunistic"] }, { "text": "Refuse quietly to avoid trouble", "tags": ["risk_averse", "pragmatic"] } ] },
+  { "id": 42, "scenario": "A friend posts a photo of you online that you dislike. What do you do?", "options": [ { "text": "Ask them to remove it", "tags": ["boundary_setting", "direct"] }, { "text": "Let it go", "tags": ["conflict_averse", "avoidant"] }, { "text": "Publicly criticize them", "tags": ["reactive", "confrontational"] } ] },
+  { "id": 43, "scenario": "You can get a tax benefit by stretching the truth slightly. What do you do?", "options": [ { "text": "Stay accurate", "tags": ["honest", "rule_following"] }, { "text": "Stretch the truth", "tags": ["opportunistic", "pragmatic"] }, { "text": "Ask an accountant for a legal approach", "tags": ["deliberative", "problem_solver"] } ] },
+  { "id": 44, "scenario": "You notice someone left their credit card at the checkout. What do you do?", "options": [ { "text": "Return it to staff immediately", "tags": ["honest", "helpful"] }, { "text": "Hold it and wait for them to return", "tags": ["pragmatic", "helpful"] }, { "text": "Use it once quickly", "tags": ["criminal", "opportunistic"] } ] },
+  { "id": 45, "scenario": "You can reduce your commute emissions by biking, but it’s inconvenient. What do you do?", "options": [ { "text": "Bike regularly", "tags": ["environmental", "self_discipline"] }, { "text": "Drive; convenience matters", "tags": ["pragmatic", "self_preserving"] }, { "text": "Mix options when feasible", "tags": ["balanced", "pragmatic"] } ] },
+
+  { "id": 46, "scenario": "A classmate asks to copy your homework. What do you do?", "options": [ { "text": "Say no", "tags": ["fairness", "rule_following"] }, { "text": "Let them copy", "tags": ["helpful", "rule_breaking"] }, { "text": "Help them understand instead", "tags": ["helpful", "responsible"] } ] },
+  { "id": 47, "scenario": "You can tip extra to help a struggling waiter, but it’s not required. What do you do?", "options": [ { "text": "Tip generously", "tags": ["generous", "empathetic"] }, { "text": "Tip standard amount", "tags": ["fair", "pragmatic"] }, { "text": "Tip nothing", "tags": ["selfish", "detached"] } ] },
+  { "id": 48, "scenario": "You witness bullying at school/work. Reporting may make you a target. What do you do?", "options": [ { "text": "Report it and support the victim", "tags": ["courageous", "protective"] }, { "text": "Support the victim privately only", "tags": ["kind", "risk_averse"] }, { "text": "Avoid getting involved", "tags": ["avoidant", "self_preserving"] } ] },
+  { "id": 49, "scenario": "You promised to attend a friend’s event, but you’re exhausted and need rest. What do you do?", "options": [ { "text": "Go anyway to keep your promise", "tags": ["reliable", "loyal"] }, { "text": "Cancel honestly", "tags": ["honest", "self_care"] }, { "text": "Make an excuse", "tags": ["deceptive", "conflict_averse"] } ] },
+  { "id": 50, "scenario": "You can help a coworker succeed, but it might reduce your own recognition. What do you do?", "options": [ { "text": "Help them anyway", "tags": ["collaborative", "generous"] }, { "text": "Help only if it benefits you too", "tags": ["strategic", "pragmatic"] }, { "text": "Do not help", "tags": ["competitive", "selfish"] } ] },
+
+  { "id": 51, "scenario": "A public official you support is caught in a scandal. The evidence is strong. What do you do?", "options": [ { "text": "Withdraw support and demand accountability", "tags": ["integrity", "justice_oriented"] }, { "text": "Defend them to protect your side", "tags": ["tribal", "loyal"] }, { "text": "Wait for more information", "tags": ["deliberative", "skeptical"] } ] },
+  { "id": 52, "scenario": "You discover a friend’s partner is cheating. Your friend doesn’t know. What do you do?", "options": [ { "text": "Tell your friend", "tags": ["honest", "protective"] }, { "text": "Confront the partner first", "tags": ["direct", "problem_solver"] }, { "text": "Stay out of it", "tags": ["avoidant", "conflict_averse"] } ] },
+  { "id": 53, "scenario": "A parent asks you to keep a secret from the other parent. You are a child in this scenario. What do you do?", "options": [ { "text": "Keep the secret", "tags": ["loyal", "obedient"] }, { "text": "Tell the other parent", "tags": ["honest", "protective"] }, { "text": "Ask the adult to resolve it themselves", "tags": ["boundary_setting", "responsible"] } ] },
+  { "id": 54, "scenario": "You’re a hiring manager and a candidate reveals they need accommodations. It may slow the team. What do you do?", "options": [ { "text": "Hire based on merit and provide accommodations", "tags": ["fairness", "inclusive", "responsible"] }, { "text": "Reject them to avoid inconvenience", "tags": ["biased", "selfish"] }, { "text": "Hire them only if budget allows", "tags": ["pragmatic", "conditional"] } ] },
+  { "id": 55, "scenario": "You can choose to pay a little more for sustainable packaging. What do you do?", "options": [ { "text": "Pay more for sustainability", "tags": ["environmental", "principled"] }, { "text": "Choose the cheaper option", "tags": ["budget_conscious", "pragmatic"] }, { "text": "Alternate depending on finances", "tags": ["balanced", "pragmatic"] } ] },
+
+  { "id": 56, "scenario": "You receive too much change in cash. What do you do?", "options": [ { "text": "Return the extra money", "tags": ["honest", "fair"] }, { "text": "Keep it", "tags": ["opportunistic", "selfish"] }, { "text": "Return it only if noticed", "tags": ["risk_averse", "pragmatic"] } ] },
+  { "id": 57, "scenario": "A teammate is new and slowing the project down. What do you do?", "options": [ { "text": "Mentor them to improve", "tags": ["empathetic", "responsible"] }, { "text": "Ask to remove them", "tags": ["results_driven", "strict"] }, { "text": "Do their work quietly", "tags": ["helpful", "self_sacrificing"] } ] },
+  { "id": 58, "scenario": "You can break a rule to help someone in a crisis. What do you do?", "options": [ { "text": "Break it to prevent harm", "tags": ["harm_reduction", "rule_breaking"] }, { "text": "Follow the rule strictly", "tags": ["rule_following", "principled"] }, { "text": "Find a workaround within the rules", "tags": ["problem_solver", "pragmatic"] } ] },
+  { "id": 59, "scenario": "You find a colleague’s resume on a printer and see they’re applying elsewhere. What do you do?", "options": [ { "text": "Leave it and respect privacy", "tags": ["privacy_respecting", "professional"] }, { "text": "Tell your boss", "tags": ["loyal_to_company", "betrayal"] }, { "text": "Ask them if they want to talk", "tags": ["empathetic", "direct"] } ] },
+  { "id": 60, "scenario": "You can vote for a policy that benefits you but harms a minority group. What do you do?", "options": [ { "text": "Vote against it", "tags": ["justice_oriented", "principled"] }, { "text": "Vote for it", "tags": ["selfish", "opportunistic"] }, { "text": "Abstain", "tags": ["avoidant", "conflict_averse"] } ] },
+
+  { "id": 61, "scenario": "A colleague makes an offensive joke. Laughing would make you fit in. What do you do?", "options": [ { "text": "Speak up", "tags": ["courageous", "respectful"] }, { "text": "Stay silent", "tags": ["conflict_averse", "avoidant"] }, { "text": "Laugh along", "tags": ["social", "careless"] } ] },
+  { "id": 62, "scenario": "You have evidence that a friend is driving drunk tonight. What do you do?", "options": [ { "text": "Stop them and call a ride", "tags": ["safety_first", "courageous"] }, { "text": "Warn them but let them decide", "tags": ["pragmatic", "hands_off"] }, { "text": "Do nothing", "tags": ["avoidant", "careless"] } ] },
+  { "id": 63, "scenario": "A hospital has one ventilator and two patients who need it. You’re on the ethics committee. What do you do?", "options": [ { "text": "Use a fair triage policy", "tags": ["procedural_fairness", "responsible"] }, { "text": "Give it to the patient with best prognosis", "tags": ["utilitarian", "outcome_focused"] }, { "text": "Give it to the youngest", "tags": ["value_choice", "controversial"] } ] },
+  { "id": 64, "scenario": "You find a journal on a bench. It contains private thoughts. What do you do?", "options": [ { "text": "Try to return it without reading", "tags": ["privacy_respecting", "honest"] }, { "text": "Read a little to identify the owner", "tags": ["pragmatic", "boundary_crossing"] }, { "text": "Keep it", "tags": ["selfish", "harmful"] } ] },
+  { "id": 65, "scenario": "You can pay to skip a long queue. Others cannot afford it. What do you do?", "options": [ { "text": "Do not skip; it feels unfair", "tags": ["fairness", "principled"] }, { "text": "Pay to skip", "tags": ["pragmatic", "self_interest"] }, { "text": "Pay only if urgent", "tags": ["balanced", "pragmatic"] } ] },
+
+  { "id": 66, "scenario": "A friend shares a secret about someone else with you. It could damage reputations. What do you do?", "options": [ { "text": "Keep it confidential", "tags": ["trustworthy", "privacy_respecting"] }, { "text": "Share it with someone else", "tags": ["careless", "gossipy"] }, { "text": "Encourage your friend to handle it responsibly", "tags": ["responsible", "direct"] } ] },
+  { "id": 67, "scenario": "You can get ahead by taking a shortcut that makes life harder for a coworker. What do you do?", "options": [ { "text": "Do not take the shortcut", "tags": ["fairness", "collaborative"] }, { "text": "Take it anyway", "tags": ["competitive", "selfish"] }, { "text": "Take it but offer to help them later", "tags": ["pragmatic", "mixed_motive"] } ] },
+  { "id": 68, "scenario": "You are moderating an online community. A post is rude but not hateful. What do you do?", "options": [ { "text": "Remove it to protect the tone", "tags": ["protective", "rule_following"] }, { "text": "Leave it and encourage better behavior", "tags": ["free_speech", "balanced"] }, { "text": "Ignore moderation to avoid drama", "tags": ["avoidant", "hands_off"] } ] },
+  { "id": 69, "scenario": "A company offers you a refund but you know you weren’t actually eligible. What do you do?", "options": [ { "text": "Decline and explain", "tags": ["honest", "fair"] }, { "text": "Accept the refund", "tags": ["opportunistic", "selfish"] }, { "text": "Accept but donate it", "tags": ["utilitarian", "mixed_motive"] } ] },
+  { "id": 70, "scenario": "You’re asked to sign an NDA that hides a harmful product defect. What do you do?", "options": [ { "text": "Refuse and escalate", "tags": ["integrity", "courageous", "safety_first"] }, { "text": "Sign it", "tags": ["self_preserving", "obedient"] }, { "text": "Sign it but plan to whistleblow later", "tags": ["strategic", "risk_tolerant"] } ] },
+
+  { "id": 71, "scenario": "A friend is raising money for a cause you disagree with. They ask you to donate. What do you do?", "options": [ { "text": "Decline respectfully", "tags": ["honest", "boundary_setting"] }, { "text": "Donate to maintain the relationship", "tags": ["people_pleasing", "social"] }, { "text": "Try to persuade them to change causes", "tags": ["direct", "activist"] } ] },
+  { "id": 72, "scenario": "You find evidence that your favorite influencer fakes charity work. What do you do?", "options": [ { "text": "Stop supporting and share the evidence", "tags": ["truth_seeking", "accountability"] }, { "text": "Ignore it because you like them", "tags": ["tribal", "avoidant"] }, { "text": "Wait for confirmation", "tags": ["deliberative", "skeptical"] } ] },
+  { "id": 73, "scenario": "A new law is unfair but legal. You can exploit it for profit. What do you do?", "options": [ { "text": "Do not exploit it", "tags": ["principled", "fairness"] }, { "text": "Exploit it", "tags": ["opportunistic", "self_interest"] }, { "text": "Exploit it while advocating to change it", "tags": ["strategic", "mixed_motive"] } ] },
+  { "id": 74, "scenario": "A friend asks for a loan. You can afford it but might not get it back. What do you do?", "options": [ { "text": "Loan it with clear terms", "tags": ["helpful", "pragmatic"] }, { "text": "Give a smaller amount as a gift", "tags": ["generous", "risk_averse"] }, { "text": "Say no", "tags": ["self_care", "boundary_setting"] } ] },
+  { "id": 75, "scenario": "You have to choose between attending a family event and a work commitment you already accepted. What do you do?", "options": [ { "text": "Honor the commitment you accepted", "tags": ["reliable", "principled"] }, { "text": "Choose family", "tags": ["family_loyal", "care_based"] }, { "text": "Try to reschedule or compromise", "tags": ["problem_solver", "balanced"] } ] },
+
+  { "id": 76, "scenario": "You can save a lot of time by using AI to write an assignment, but it’s against the rules. What do you do?", "options": [ { "text": "Do it yourself", "tags": ["rule_following", "integrity"] }, { "text": "Use AI anyway", "tags": ["opportunistic", "rule_breaking"] }, { "text": "Use AI only for brainstorming within allowed rules", "tags": ["pragmatic", "balanced"] } ] },
+  { "id": 77, "scenario": "A friend asks you to share your streaming password. It’s against terms of service. What do you do?", "options": [ { "text": "Say no", "tags": ["rule_following", "boundary_setting"] }, { "text": "Share it", "tags": ["loyal", "rule_breaking"] }, { "text": "Offer to split the cost legally", "tags": ["pragmatic", "fair"] } ] },
+  { "id": 78, "scenario": "You can report a minor fraud, but it will likely cost someone their job. What do you do?", "options": [ { "text": "Report it", "tags": ["justice_oriented", "rule_following"] }, { "text": "Talk to them first to correct it", "tags": ["empathetic", "responsible"] }, { "text": "Ignore it", "tags": ["avoidant", "pragmatic"] } ] },
+  { "id": 79, "scenario": "A team vote is split. You can sway it by exaggerating risks. What do you do?", "options": [ { "text": "Present facts honestly", "tags": ["honest", "responsible"] }, { "text": "Exaggerate to get your way", "tags": ["manipulative", "results_driven"] }, { "text": "Stay quiet", "tags": ["avoidant", "conflict_averse"] } ] },
+  { "id": 80, "scenario": "Your child asks if Santa is real. What do you do?", "options": [ { "text": "Tell the truth gently", "tags": ["honest", "empathetic"] }, { "text": "Maintain the story for fun", "tags": ["kind", "tradition"] }, { "text": "Ask what they think and respond", "tags": ["deliberative", "autonomy_respecting"] } ] },
+
+  { "id": 81, "scenario": "A coworker is being discriminated against subtly. Speaking up could hurt your career. What do you do?", "options": [ { "text": "Speak up and document it", "tags": ["courageous", "justice_oriented"] }, { "text": "Support them privately only", "tags": ["kind", "risk_averse"] }, { "text": "Do nothing", "tags": ["avoidant", "self_preserving"] } ] },
+  { "id": 82, "scenario": "You are late and can cut in line without being noticed. What do you do?", "options": [ { "text": "Do not cut", "tags": ["fairness", "rule_following"] }, { "text": "Cut in line", "tags": ["opportunistic", "self_interest"] }, { "text": "Ask politely if you can go ahead", "tags": ["direct", "pragmatic"] } ] },
+  { "id": 83, "scenario": "A friend wants you to keep their location secret from their family. You suspect they may be unsafe. What do you do?", "options": [ { "text": "Keep it but check on their safety", "tags": ["loyal", "protective"] }, { "text": "Tell family to ensure safety", "tags": ["safety_first", "responsible"] }, { "text": "Refuse to get involved", "tags": ["boundary_setting", "avoidant"] } ] },
+  { "id": 84, "scenario": "You can donate blood, but you dislike needles. What do you do?", "options": [ { "text": "Donate anyway", "tags": ["altruistic", "courageous"] }, { "text": "Do not donate", "tags": ["self_care", "avoidant"] }, { "text": "Look for another way to help", "tags": ["helpful", "problem_solver"] } ] },
+  { "id": 85, "scenario": "Your friend’s startup asks you to invest. You doubt it will succeed. What do you do?", "options": [ { "text": "Decline honestly", "tags": ["honest", "pragmatic"] }, { "text": "Invest to show support", "tags": ["loyal", "risk_tolerant"] }, { "text": "Offer advice instead of money", "tags": ["helpful", "problem_solver"] } ] },
+
+  { "id": 86, "scenario": "You see someone drop cash. They don’t notice and walk away. What do you do?", "options": [ { "text": "Return it", "tags": ["honest", "helpful"] }, { "text": "Keep it", "tags": ["opportunistic", "selfish"] }, { "text": "Leave it there", "tags": ["avoidant", "pragmatic"] } ] },
+  { "id": 87, "scenario": "A friend asks you to be a reference, but you think they’d be a bad hire. What do you do?", "options": [ { "text": "Decline", "tags": ["honest", "responsible"] }, { "text": "Give a glowing reference anyway", "tags": ["loyal", "deceptive"] }, { "text": "Give a neutral, factual reference", "tags": ["balanced", "honest"] } ] },
+  { "id": 88, "scenario": "You can avoid paying for public transport by sneaking in. What do you do?", "options": [ { "text": "Pay the fare", "tags": ["rule_following", "fair"] }, { "text": "Sneak in", "tags": ["rule_breaking", "opportunistic"] }, { "text": "Pay only sometimes", "tags": ["pragmatic", "inconsistent"] } ] },
+  { "id": 89, "scenario": "A person asks you to sign a petition you don’t fully understand. What do you do?", "options": [ { "text": "Research before signing", "tags": ["deliberative", "skeptical"] }, { "text": "Sign to be polite", "tags": ["people_pleasing", "social"] }, { "text": "Refuse without looking", "tags": ["avoidant", "boundary_setting"] } ] },
+  { "id": 90, "scenario": "You can report a neighbor’s small illegal rental to authorities, which could remove housing for a family. What do you do?", "options": [ { "text": "Report it", "tags": ["rule_following", "strict"] }, { "text": "Do not report; talk first", "tags": ["empathetic", "context_sensitive"] }, { "text": "Ignore it", "tags": ["avoidant", "hands_off"] } ] },
+
+  { "id": 91, "scenario": "You learn your friend is being emotionally abused. They ask you not to tell anyone. What do you do?", "options": [ { "text": "Respect privacy but encourage help and safety planning", "tags": ["care_based", "protective"] }, { "text": "Tell someone who can help immediately", "tags": ["safety_first", "responsible"] }, { "text": "Do nothing to honor their request", "tags": ["loyal", "avoidant"] } ] },
+  { "id": 92, "scenario": "You are offered a promotion that requires relocating and would separate you from family support. What do you do?", "options": [ { "text": "Take it for career growth", "tags": ["ambitious", "self_interest"] }, { "text": "Decline for family stability", "tags": ["care_based", "family_loyal"] }, { "text": "Negotiate a hybrid alternative", "tags": ["problem_solver", "pragmatic"] } ] },
+  { "id": 93, "scenario": "You can choose to share a colleague’s mistake to protect yourself. What do you do?", "options": [ { "text": "Own your part and do not scapegoat", "tags": ["integrity", "fair"] }, { "text": "Blame them to protect yourself", "tags": ["self_preserving", "unfair"] }, { "text": "Privately fix it together", "tags": ["collaborative", "responsible"] } ] },
+  { "id": 94, "scenario": "A friend asks you to keep their illegal side hustle secret. You think it’s low harm. What do you do?", "options": [ { "text": "Keep it secret", "tags": ["loyal", "pragmatic"] }, { "text": "Tell them to stop and warn them", "tags": ["responsible", "direct"] }, { "text": "Report it", "tags": ["rule_following", "justice_oriented"] } ] },
+  { "id": 95, "scenario": "You are asked to host a guest you dislike for a night. It would help them. What do you do?", "options": [ { "text": "Host them anyway", "tags": ["generous", "kind"] }, { "text": "Decline politely", "tags": ["boundary_setting", "self_care"] }, { "text": "Agree but treat them coldly", "tags": ["resentful", "conflict_averse"] } ] },
+
+  { "id": 96, "scenario": "You can volunteer for a community cleanup, but you’d rather rest. What do you do?", "options": [ { "text": "Volunteer", "tags": ["community_minded", "altruistic"] }, { "text": "Do not volunteer", "tags": ["self_care", "pragmatic"] }, { "text": "Volunteer occasionally", "tags": ["balanced", "pragmatic"] } ] },
+  { "id": 97, "scenario": "You find out your company’s marketing is misleading but not technically false. What do you do?", "options": [ { "text": "Push to make it clearer", "tags": ["honest", "responsible"] }, { "text": "Accept it as normal business", "tags": ["pragmatic", "complacent"] }, { "text": "Refuse to work on it", "tags": ["principled", "courageous"] } ] },
+  { "id": 98, "scenario": "A friend sends you a private screenshot of someone’s messages. They ask your opinion. What do you do?", "options": [ { "text": "Decline to read; respect privacy", "tags": ["privacy_respecting", "principled"] }, { "text": "Read and advise", "tags": ["pragmatic", "boundary_crossing"] }, { "text": "Tell them this is not okay", "tags": ["direct", "responsible"] } ] },
+  { "id": 99, "scenario": "You can get a refund by claiming a package never arrived, but it did. What do you do?", "options": [ { "text": "Do not lie", "tags": ["honest", "integrity"] }, { "text": "Lie for the refund", "tags": ["deceptive", "opportunistic"] }, { "text": "Request a discount for inconvenience only if true", "tags": ["fair", "pragmatic"] } ] },
+  { "id": 100, "scenario": "A team member is sick but keeps working. You worry about burnout. What do you do?", "options": [ { "text": "Encourage them to rest", "tags": ["empathetic", "responsible"] }, { "text": "Let them decide", "tags": ["hands_off", "autonomy_respecting"] }, { "text": "Pressure them to keep going", "tags": ["results_driven", "strict"] } ] },
+
+  { "id": 101, "scenario": "You see a dog left in a hot car. The owner is not around. What do you do?", "options": [ { "text": "Call authorities and try to help", "tags": ["protective", "safety_first"] }, { "text": "Break the window to save the dog", "tags": ["risk_tolerant", "harm_reduction"] }, { "text": "Wait and hope the owner returns", "tags": ["risk_averse", "avoidant"] } ] },
+  { "id": 102, "scenario": "You can make money by promoting a product you know is low quality. What do you do?", "options": [ { "text": "Refuse", "tags": ["integrity", "honest"] }, { "text": "Promote it anyway", "tags": ["opportunistic", "self_interest"] }, { "text": "Promote only with clear disclaimers", "tags": ["balanced", "honest"] } ] },
+  { "id": 103, "scenario": "A friend is angry and asks you to take their side in a conflict you don’t fully understand. What do you do?", "options": [ { "text": "Listen first before judging", "tags": ["deliberative", "fair"] }, { "text": "Immediately take their side", "tags": ["loyal", "tribal"] }, { "text": "Avoid getting involved", "tags": ["avoidant", "conflict_averse"] } ] },
+  { "id": 104, "scenario": "You can choose a cheaper flight with higher emissions or a train that is slower but greener. What do you do?", "options": [ { "text": "Choose the train", "tags": ["environmental", "principled"] }, { "text": "Choose the flight", "tags": ["pragmatic", "time_sensitive"] }, { "text": "Choose based on necessity each time", "tags": ["balanced", "pragmatic"] } ] },
+  { "id": 105, "scenario": "A friend asks you to keep them company while they confront someone. It’s stressful for you. What do you do?", "options": [ { "text": "Go to support them", "tags": ["loyal", "supportive"] }, { "text": "Set a boundary and decline", "tags": ["self_care", "boundary_setting"] }, { "text": "Offer an alternative support", "tags": ["problem_solver", "kind"] } ] },
+
+  { "id": 106, "scenario": "You are asked to review a colleague’s work. You notice a small error that could hurt them later. What do you do?", "options": [ { "text": "Point it out constructively", "tags": ["responsible", "kind"] }, { "text": "Say nothing to avoid awkwardness", "tags": ["conflict_averse", "avoidant"] }, { "text": "Publicly criticize them", "tags": ["harsh", "confrontational"] } ] },
+  { "id": 107, "scenario": "A neighbor’s package is delivered to your door. What do you do?", "options": [ { "text": "Bring it to them", "tags": ["helpful", "honest"] }, { "text": "Keep it", "tags": ["opportunistic", "selfish"] }, { "text": "Leave it outside and ignore it", "tags": ["avoidant", "careless"] } ] },
+  { "id": 108, "scenario": "You can choose to buy from a small local shop or a cheaper big corporation. What do you do?", "options": [ { "text": "Buy local to support community", "tags": ["community_minded", "principled"] }, { "text": "Buy cheaper", "tags": ["budget_conscious", "pragmatic"] }, { "text": "Split purchases between both", "tags": ["balanced", "pragmatic"] } ] },
+  { "id": 109, "scenario": "You are offered inside information in a business deal. Using it is unethical but profitable. What do you do?", "options": [ { "text": "Refuse to use it", "tags": ["integrity", "principled"] }, { "text": "Use it", "tags": ["opportunistic", "self_interest"] }, { "text": "Report the source", "tags": ["justice_oriented", "responsible"] } ] },
+  { "id": 110, "scenario": "Someone asks you to translate a message that contains a hidden insult. What do you do?", "options": [ { "text": "Translate accurately", "tags": ["honest", "neutral"] }, { "text": "Soften it to reduce harm", "tags": ["harm_reduction", "kind"] }, { "text": "Refuse to translate", "tags": ["boundary_setting", "avoidant"] } ] },
+
+  { "id": 111, "scenario": "You can adopt a pet, but you may not have time to care for it properly. What do you do?", "options": [ { "text": "Do not adopt", "tags": ["responsible", "self_aware"] }, { "text": "Adopt anyway", "tags": ["impulsive", "optimistic"] }, { "text": "Offer to foster temporarily", "tags": ["helpful", "pragmatic"] } ] },
+  { "id": 112, "scenario": "A friend asks to borrow your car. You worry they might drive recklessly. What do you do?", "options": [ { "text": "Say no", "tags": ["safety_first", "boundary_setting"] }, { "text": "Say yes to help them", "tags": ["helpful", "trusting"] }, { "text": "Say yes with conditions", "tags": ["pragmatic", "risk_averse"] } ] },
+  { "id": 113, "scenario": "You see someone take the last accessible parking spot without needing it. What do you do?", "options": [ { "text": "Confront them politely", "tags": ["direct", "justice_oriented"] }, { "text": "Report to staff/security", "tags": ["rule_following", "justice_oriented"] }, { "text": "Do nothing", "tags": ["avoidant", "risk_averse"] } ] },
+  { "id": 114, "scenario": "A friend wants to vent by insulting someone else. It makes you uncomfortable. What do you do?", "options": [ { "text": "Set a boundary and redirect", "tags": ["boundary_setting", "kind"] }, { "text": "Listen silently", "tags": ["conflict_averse", "avoidant"] }, { "text": "Join in", "tags": ["tribal", "careless"] } ] },
+  { "id": 115, "scenario": "You can choose to buy a used item or a new one. The new one is nicer. What do you do?", "options": [ { "text": "Buy used to reduce waste", "tags": ["environmental", "pragmatic"] }, { "text": "Buy new", "tags": ["self_interest", "comfort_seeking"] }, { "text": "Decide based on budget/need", "tags": ["balanced", "pragmatic"] } ] },
+
+  { "id": 116, "scenario": "You are asked to keep a workplace secret that hides harassment. What do you do?", "options": [ { "text": "Refuse and report the harassment", "tags": ["justice_oriented", "courageous"] }, { "text": "Keep quiet to protect your job", "tags": ["self_preserving", "avoidant"] }, { "text": "Support the victim and encourage reporting", "tags": ["care_based", "responsible"] } ] },
+  { "id": 117, "scenario": "A friend invites you to a gathering you know will exclude someone unfairly. What do you do?", "options": [ { "text": "Decline and explain why", "tags": ["justice_oriented", "courageous"] }, { "text": "Go anyway", "tags": ["social", "careless"] }, { "text": "Try to include the excluded person", "tags": ["inclusive", "problem_solver"] } ] },
+  { "id": 118, "scenario": "You can choose to correct a stranger’s misinformation in public, but it might embarrass them. What do you do?", "options": [ { "text": "Correct gently", "tags": ["truth_seeking", "kind"] }, { "text": "Say nothing", "tags": ["conflict_averse", "avoidant"] }, { "text": "Correct harshly to be clear", "tags": ["direct", "harsh"] } ] },
+  { "id": 119, "scenario": "You have a chance to return to a store to pay for something you accidentally walked out with. What do you do?", "options": [ { "text": "Go back and pay", "tags": ["honest", "integrity"] }, { "text": "Keep it", "tags": ["opportunistic", "selfish"] }, { "text": "Pay only if you return anyway", "tags": ["pragmatic", "risk_averse"] } ] },
+  { "id": 120, "scenario": "You notice a friend’s relationship is unhealthy, but they didn’t ask for advice. What do you do?", "options": [ { "text": "Check in and express concern gently", "tags": ["care_based", "empathetic"] }, { "text": "Stay silent", "tags": ["avoidant", "conflict_averse"] }, { "text": "Confront them strongly", "tags": ["direct", "courageous"] } ] },
+
+  { "id": 121, "scenario": "You can choose to share your notes with classmates, but you worked hard and worry others will benefit without effort. What do you do?", "options": [ { "text": "Share them", "tags": ["generous", "collaborative"] }, { "text": "Keep them private", "tags": ["self_preserving", "pragmatic"] }, { "text": "Share selectively", "tags": ["balanced", "strategic"] } ] },
+  { "id": 122, "scenario": "You’re asked to vote on layoffs. Keeping profits high means layoffs; reducing profits means keeping jobs. What do you do?", "options": [ { "text": "Protect jobs even if profits fall", "tags": ["care_based", "justice_oriented"] }, { "text": "Prioritize profits", "tags": ["results_driven", "utilitarian"] }, { "text": "Seek alternatives like pay cuts or reduced hours", "tags": ["problem_solver", "balanced"] } ] },
+  { "id": 123, "scenario": "A friend reveals they committed a serious crime in the past and feel guilty. What do you do?", "options": [ { "text": "Encourage them to seek legal/ethical accountability", "tags": ["justice_oriented", "responsible"] }, { "text": "Keep it secret to protect them", "tags": ["loyal", "protective"] }, { "text": "Distance yourself", "tags": ["avoidant", "self_preserving"] } ] },
+  { "id": 124, "scenario": "You can choose to correct a billing error that benefits your employer but harms customers. What do you do?", "options": [ { "text": "Fix it and inform leadership", "tags": ["honest", "responsible"] }, { "text": "Ignore it because it benefits the company", "tags": ["company_loyal", "unfair"] }, { "text": "Fix it quietly", "tags": ["problem_solver", "pragmatic"] } ] },
+  { "id": 125, "scenario": "A friend asks you to help them stalk an ex online. What do you do?", "options": [ { "text": "Refuse and set a boundary", "tags": ["boundary_setting", "responsible"] }, { "text": "Help them", "tags": ["loyal", "harmful"] }, { "text": "Encourage healthier coping", "tags": ["care_based", "empathetic"] } ] },
+
+  { "id": 126, "scenario": "You can choose to accept a gift from a vendor, which might bias your decisions at work. What do you do?", "options": [ { "text": "Decline the gift", "tags": ["integrity", "professional"] }, { "text": "Accept it", "tags": ["opportunistic", "biased"] }, { "text": "Accept and disclose it", "tags": ["transparent", "balanced"] } ] },
+  { "id": 127, "scenario": "You witness a friend stealing from a large corporation. They say it doesn’t matter. What do you do?", "options": [ { "text": "Tell them to stop and return it", "tags": ["responsible", "principled"] }, { "text": "Report them", "tags": ["rule_following", "justice_oriented"] }, { "text": "Say nothing", "tags": ["loyal", "avoidant"] } ] },
+  { "id": 128, "scenario": "You can choose to take a job that pays well but conflicts with your values. What do you do?", "options": [ { "text": "Decline for values", "tags": ["principled", "integrity"] }, { "text": "Take it for money", "tags": ["pragmatic", "self_interest"] }, { "text": "Take it temporarily while seeking alternatives", "tags": ["strategic", "balanced"] } ] },
+  { "id": 129, "scenario": "You are offered a chance to speak publicly about an issue, but you fear backlash. What do you do?", "options": [ { "text": "Speak up", "tags": ["courageous", "justice_oriented"] }, { "text": "Stay quiet", "tags": ["self_preserving", "risk_averse"] }, { "text": "Support the cause privately", "tags": ["helpful", "risk_averse"] } ] },
+  { "id": 130, "scenario": "You can choose to spend time with a lonely relative or pursue a personal hobby. What do you do?", "options": [ { "text": "Spend time with them", "tags": ["care_based", "family_loyal"] }, { "text": "Choose your hobby", "tags": ["self_care", "self_interest"] }, { "text": "Split time intentionally", "tags": ["balanced", "pragmatic"] } ] },
+
+  { "id": 131, "scenario": "A friend asks you to lie on their behalf to get a refund. What do you do?", "options": [ { "text": "Refuse", "tags": ["honest", "integrity"] }, { "text": "Lie to help them", "tags": ["loyal", "deceptive"] }, { "text": "Offer to help in a legal way", "tags": ["problem_solver", "pragmatic"] } ] },
+  { "id": 132, "scenario": "You find a notebook containing someone’s business idea. You could use it for yourself. What do you do?", "options": [ { "text": "Try to return it", "tags": ["honest", "fair"] }, { "text": "Use the idea", "tags": ["opportunistic", "exploitative"] }, { "text": "Ignore it and walk away", "tags": ["avoidant", "hands_off"] } ] },
+  { "id": 133, "scenario": "You’re in a group project. One person does nothing. What do you do?", "options": [ { "text": "Address it directly and redistribute tasks", "tags": ["direct", "responsible"] }, { "text": "Tell the instructor/manager", "tags": ["rule_following", "fairness"] }, { "text": "Do their work to finish", "tags": ["self_sacrificing", "conflict_averse"] } ] },
+  { "id": 134, "scenario": "You can choose to give honest feedback that may cost someone a scholarship/job. What do you do?", "options": [ { "text": "Be honest", "tags": ["honest", "responsible"] }, { "text": "Soften the truth significantly", "tags": ["kind", "conflict_averse"] }, { "text": "Refuse to give feedback", "tags": ["avoidant", "boundary_setting"] } ] },
+  { "id": 135, "scenario": "You see a stranger collapse. You’re not sure what to do. What do you do?", "options": [ { "text": "Call emergency services and help", "tags": ["responsible", "courageous"] }, { "text": "Ask others to handle it", "tags": ["deferential", "risk_averse"] }, { "text": "Leave", "tags": ["avoidant", "self_preserving"] } ] },
+
+  { "id": 136, "scenario": "You can choose to support a policy that increases surveillance to reduce crime. What do you do?", "options": [ { "text": "Support it for safety", "tags": ["security_focused", "utilitarian"] }, { "text": "Oppose it for privacy", "tags": ["privacy_respecting", "principled"] }, { "text": "Support with strict safeguards", "tags": ["balanced", "responsible"] } ] },
+  { "id": 137, "scenario": "A friend tells you they might harm themselves. They beg you not to tell anyone. What do you do?", "options": [ { "text": "Get help immediately", "tags": ["safety_first", "protective", "responsible"] }, { "text": "Keep it secret and just support them", "tags": ["loyal", "care_based"] }, { "text": "Avoid the situation", "tags": ["avoidant", "overwhelmed"] } ] },
+  { "id": 138, "scenario": "You can choose to vote for a candidate you dislike, but who supports policies that help many people. What do you do?", "options": [ { "text": "Vote based on policy outcomes", "tags": ["utilitarian", "pragmatic"] }, { "text": "Vote based on character", "tags": ["principled", "values_driven"] }, { "text": "Do not vote", "tags": ["avoidant", "disengaged"] } ] },
+  { "id": 139, "scenario": "You are asked to keep a corporate secret that hides environmental harm. What do you do?", "options": [ { "text": "Report internally and push to stop harm", "tags": ["environmental", "responsible", "courageous"] }, { "text": "Keep it secret", "tags": ["self_preserving", "company_loyal"] }, { "text": "Leak to regulators/media", "tags": ["whistleblower", "risk_tolerant"] } ] },
+  { "id": 140, "scenario": "You can choose to repair something old or replace it with a new one. Repair is harder. What do you do?", "options": [ { "text": "Repair it", "tags": ["resourceful", "environmental"] }, { "text": "Replace it", "tags": ["pragmatic", "comfort_seeking"] }, { "text": "Repair if cost-effective, otherwise replace", "tags": ["balanced", "pragmatic"] } ] },
+
+  { "id": 141, "scenario": "You are a judge in a game show. Cheating is obvious, but the contestant is in desperate need. What do you do?", "options": [ { "text": "Disqualify for fairness", "tags": ["rule_following", "fairness"] }, { "text": "Let it slide", "tags": ["empathetic", "rule_breaking"] }, { "text": "Offer help outside the contest", "tags": ["problem_solver", "compassionate"] } ] },
+  { "id": 142, "scenario": "You find a lost USB drive labeled 'private'. What do you do?", "options": [ { "text": "Return it without opening files", "tags": ["privacy_respecting", "honest"] }, { "text": "Open files to find owner", "tags": ["pragmatic", "boundary_crossing"] }, { "text": "Keep it", "tags": ["opportunistic", "harmful"] } ] },
+  { "id": 143, "scenario": "You can choose to stop paying attention to news to protect your mental health, but you worry about becoming uninformed. What do you do?", "options": [ { "text": "Limit news intentionally", "tags": ["self_care", "balanced"] }, { "text": "Stay fully informed", "tags": ["civic_minded", "responsible"] }, { "text": "Avoid news entirely", "tags": ["avoidant", "self_preserving"] } ] },
+  { "id": 144, "scenario": "You are asked to coach someone who previously treated you poorly. What do you do?", "options": [ { "text": "Coach them professionally", "tags": ["forgiving", "responsible"] }, { "text": "Decline", "tags": ["boundary_setting", "self_care"] }, { "text": "Agree but do minimal effort", "tags": ["resentful", "avoidant"] } ] },
+  { "id": 145, "scenario": "You can choose to share your location with a partner for safety, but it reduces privacy. What do you do?", "options": [ { "text": "Share it", "tags": ["security_focused", "trusting"] }, { "text": "Do not share", "tags": ["privacy_respecting", "boundary_setting"] }, { "text": "Share only in emergencies", "tags": ["balanced", "pragmatic"] } ] },
+
+  { "id": 146, "scenario": "A friend asks you to join a boycott. You agree with the goal but it’s inconvenient. What do you do?", "options": [ { "text": "Join the boycott", "tags": ["activist", "principled"] }, { "text": "Do not join", "tags": ["pragmatic", "self_preserving"] }, { "text": "Support in other ways", "tags": ["balanced", "helpful"] } ] },
+  { "id": 147, "scenario": "You can choose to pay extra to offset carbon emissions for a trip. What do you do?", "options": [ { "text": "Pay to offset", "tags": ["environmental", "responsible"] }, { "text": "Do not pay", "tags": ["pragmatic", "budget_conscious"] }, { "text": "Offset sometimes", "tags": ["balanced", "pragmatic"] } ] },
+  { "id": 148, "scenario": "You are a bystander when a cashier is being yelled at. What do you do?", "options": [ { "text": "Support the cashier and de-escalate", "tags": ["courageous", "protective"] }, { "text": "Find a manager", "tags": ["responsible", "risk_averse"] }, { "text": "Stay out of it", "tags": ["avoidant", "self_preserving"] } ] },
+  { "id": 149, "scenario": "You can choose to share a friend’s good news before they announce it. What do you do?", "options": [ { "text": "Do not share; it’s their story", "tags": ["respectful", "trustworthy"] }, { "text": "Share it because it’s exciting", "tags": ["careless", "social"] }, { "text": "Ask permission first", "tags": ["respectful", "direct"] } ] },
+  { "id": 150, "scenario": "You can choose to spend your free evening helping someone move or relaxing at home. What do you do?", "options": [ { "text": "Help them move", "tags": ["helpful", "loyal"] }, { "text": "Relax at home", "tags": ["self_care", "boundary_setting"] }, { "text": "Offer partial help or another time", "tags": ["balanced", "pragmatic"] } ] }
+]
