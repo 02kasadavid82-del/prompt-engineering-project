@@ -1,9 +1,9 @@
-# Ethical Decision Simulator (MVP)
+# Ethical Decision Simulator
 
 Minimal ethical dilemma quiz (10 questions) with AI-based analysis.
 
 ## Prerequisites
-- Node.js 18+ (you have Node installed already)
+- Node.js 18+
 - An OpenAI API key
 
 ## 1) Run the backend (Express)
@@ -11,7 +11,7 @@ Minimal ethical dilemma quiz (10 questions) with AI-based analysis.
 In one terminal:
 
 ```powershell
-cd c:\Users\Upgradepc\Coding\david\prompt-engineering-project\backend
+cd \prompt-engineering-project\backend
 npm install
 copy .env.example .env
 notepad .env
@@ -27,7 +27,7 @@ Backend runs on `http://localhost:3001`.
 In a second terminal:
 
 ```powershell
-cd c:\Users\Upgradepc\Coding\david\prompt-engineering-project\frontend
+cd \prompt-engineering-project\frontend
 npm install
 npm run dev
 ```
