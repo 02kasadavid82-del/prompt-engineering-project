@@ -6,35 +6,43 @@ Minimal ethical dilemma quiz (10 questions) with AI-based analysis.
 - Node.js 18+
 - An OpenAI API key
 
-## 1) Run the backend (Express)
+## 1) Install everything
 
-In one terminal:
+From the project root:
 
 ```powershell
-cd \prompt-engineering-project\backend
-npm install
+npm run install:all
+```
+
+This installs the root tooling (`concurrently`) plus both `backend/` and `frontend/` dependencies.
+
+## 2) Configure the backend
+
+```powershell
+cd backend
 copy .env.example .env
-notepad .env
-npm run dev
+notepad .env   # set OPENAI_API_KEY
+cd ..
 ```
 
-Set `OPENAI_API_KEY` inside `.env`.
+## 3) Run both servers with one command
 
-Backend runs on `http://localhost:3001`.
-
-## 2) Run the frontend (Vite + React)
-
-In a second terminal:
+From the project root:
 
 ```powershell
-cd \prompt-engineering-project\frontend
-npm install
 npm run dev
 ```
 
-Open the URL Vite prints (usually `http://localhost:5173`).
+This starts the Express backend on `http://localhost:3001` and the Vite/React frontend on `http://localhost:5173` in the same terminal, with prefixed output (`[backend]` / `[frontend]`). `Ctrl+C` stops both; if either crashes, the other is killed too (`--kill-others-on-fail`).
 
-The frontend calls the backend via a dev proxy:
+### Run them separately
+
+```powershell
+npm run dev:backend     # Express only
+npm run dev:frontend    # Vite only
+```
+
+The frontend talks to the backend via a dev proxy:
 - `GET /api/dilemmas`
 - `POST /api/analyze`
 

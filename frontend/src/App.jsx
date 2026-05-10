@@ -2,6 +2,8 @@ import { useEffect, useMemo, useState } from "react";
 import Quiz from "./Quiz.jsx";
 import Result from "./Result.jsx";
 
+const QUIZ_LENGTH = 10;
+
 export default function App() {
   const [screen, setScreen] = useState("start"); // start | quiz | result
   const [allDilemmas, setAllDilemmas] = useState([]);
@@ -10,9 +12,9 @@ export default function App() {
   const [dilemmasError, setDilemmasError] = useState("");
 
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [answers, setAnswers] = useState([]); // { dilemmaId, optionText, tags }
+  const [answers, setAnswers] = useState([]);
 
-  const total = quizDilemmas.length || 10;
+  const total = quizDilemmas.length || QUIZ_LENGTH;
 
   function getSeenIds() {
     try {
@@ -34,7 +36,6 @@ export default function App() {
 
   function pickQuizDilemmas(all, count) {
     const seen = new Set(getSeenIds());
-
     const unseen = all.filter((d) => !seen.has(d.id));
     const alreadySeen = all.filter((d) => seen.has(d.id));
 
@@ -47,8 +48,7 @@ export default function App() {
       return copy;
     }
 
-    const picked = [...shuffled(unseen), ...shuffled(alreadySeen)].slice(0, count);
-    return picked;
+    return [...shuffled(unseen), ...shuffled(alreadySeen)].slice(0, count);
   }
 
   const tagCounts = useMemo(() => {
@@ -66,9 +66,8 @@ export default function App() {
       const res = await fetch("/api/dilemmas");
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
       const data = await res.json();
-      const arr = Array.isArray(data) ? data : [];
-      setAllDilemmas(arr);
-    } catch (e) {
+      setAllDilemmas(Array.isArray(data) ? data : []);
+    } catch {
       setDilemmasError("Could not load dilemmas. Is the backend running?");
     } finally {
       setLoadingDilemmas(false);
@@ -76,18 +75,12 @@ export default function App() {
   }
 
   useEffect(() => {
-    // Preload once so "Start" feels instant if backend is up.
     fetchDilemmas();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
-
-  const seenCount = useMemo(() => getSeenIds().length, [screen]);
-  const unseenCount = Math.max(0, allDilemmas.length - seenCount);
 
   function startQuiz() {
     if (!allDilemmas.length) return;
-    const picked = pickQuizDilemmas(allDilemmas, 10);
-    setQuizDilemmas(picked);
+    setQuizDilemmas(pickQuizDilemmas(allDilemmas, QUIZ_LENGTH));
     setAnswers([]);
     setCurrentIndex(0);
     setScreen("quiz");
@@ -121,90 +114,22 @@ export default function App() {
   return (
     <div className="page">
       <header className="topbar">
-        <div className="brand">
-          <div className="brandTitle">Ethical Decision Simulator</div>
-          <div className="brandSub">Dilemma-based reflection • 10 questions per run</div>
+        <div className="topbarInner">
+          <div className="brand">
+            <span className="brandMark">Ethical Decision Simulator</span>
+            <span className="brandSub">An Inquiry</span>
+          </div>
         </div>
       </header>
 
       <main className="container">
         {screen === "start" && (
-          <section className="landing cardEnter">
-            <div className="landingHero">
-              <div className="landingKicker">A 2‑minute decision-style snapshot</div>
-              <h1 className="landingTitle">Ethical Decision Simulator</h1>
-              <p className="landingLead">
-                Answer <strong>10 curated dilemmas</strong> in a clean, fast flow. Then get a structured
-                profile that explains how you tend to weigh <strong>fairness</strong>,{" "}
-                <strong>risk</strong>, <strong>rules</strong>, and <strong>outcomes</strong>.
-              </p>
-
-              {dilemmasError ? <p className="error">{dilemmasError}</p> : null}
-
-              <div className="valueRow" aria-label="Highlights">
-                <div className="valuePill">
-                  <div className="valueTop">10</div>
-                  <div className="valueBot">questions</div>
-                </div>
-                <div className="valuePill">
-                  <div className="valueTop">~2 min</div>
-                  <div className="valueBot">to finish</div>
-                </div>
-                <div className="valuePill">
-                  <div className="valueTop">Instant</div>
-                  <div className="valueBot">profile</div>
-                </div>
-              </div>
-
-              <div className="actions landingActions">
-                <button
-                  className="btn primary btnLg"
-                  onClick={startQuiz}
-                  disabled={loadingDilemmas || allDilemmas.length === 0}
-                >
-                  {loadingDilemmas ? "Loading…" : "Start a 10‑question run"}
-                </button>
-              </div>
-            </div>
-
-            <div className="landingPanel">
-              <div className="panelTitle">How it works</div>
-              <ol className="steps">
-                <li>
-                  <div className="stepTitle">Answer 10 dilemmas</div>
-                  <div className="stepText">Pick what you’d do. Move forward. No backtracking needed.</div>
-                </li>
-                <li>
-                  <div className="stepTitle">Get your profile</div>
-                  <div className="stepText">A headline + summary, then 3–4 scored themes with plain-language explanations.</div>
-                </li>
-                <li>
-                  <div className="stepTitle">Come back later</div>
-                  <div className="stepText">New runs prioritize dilemmas you haven’t seen yet.</div>
-                </li>
-              </ol>
-
-              <div className="panelDivider" aria-hidden="true" />
-
-              <div className="panelTitleSm">What you get</div>
-              <div className="panelGrid">
-                <div className="panelCard">
-                  <div className="panelLabel">Clarity</div>
-                  <div className="panelText">See which trade-offs you default to when choices get messy.</div>
-                </div>
-                <div className="panelCard">
-                  <div className="panelLabel">Perspective</div>
-                  <div className="panelText">Understand the patterns behind your “why”, not just your answers.</div>
-                </div>
-              </div>
-
-              <p className="hint">
-                {allDilemmas.length
-                  ? "Tip: each new run prioritizes dilemmas you haven’t seen."
-                  : "Start the backend to load dilemmas."}
-              </p>
-            </div>
-          </section>
+          <StartScreen
+            loading={loadingDilemmas}
+            error={dilemmasError}
+            ready={allDilemmas.length > 0}
+            onStart={startQuiz}
+          />
         )}
 
         {screen === "quiz" && (
@@ -222,9 +147,142 @@ export default function App() {
       </main>
 
       <footer className="footer">
-        <span>Local dilemmas • AI analysis</span>
+        <div className="footerInner">
+          <span className="brandMark">Ethical Decision Simulator</span>
+          <span>Local dilemmas · AI analysis</span>
+        </div>
       </footer>
     </div>
   );
 }
 
+function StartScreen({ loading, error, ready, onStart }) {
+  return (
+    <section className="landing cardEnter">
+      <Hero loading={loading} error={error} ready={ready} onStart={onStart} />
+
+      <SpecsStrip />
+
+      <Method />
+
+      <p className="landingFootnote">
+        {ready
+          ? "Each new run prioritises dilemmas you have not yet seen."
+          : "Start the backend to load dilemmas."}
+      </p>
+    </section>
+  );
+}
+
+function Hero({ loading, error, ready, onStart }) {
+  return (
+    <div className="landingHero">
+      <div className="landingCopy">
+        <span className="kicker">An Ethical Inquiry</span>
+
+        <div className="landingTitleBlock">
+          <h1 className="display">A Quiet Room for Difficult Choices.</h1>
+          <p className="lead">
+            Step away from the noise of certainty. Answer ten curated dilemmas and
+            receive a structured reading of how you tend to weigh fairness, risk,
+            rules, and outcomes.
+          </p>
+        </div>
+
+        <div className="editorialAccent">
+          <p className="heroQuote">
+            "The unexamined life is not worth living. But the examined life is
+            rarely comfortable."
+          </p>
+        </div>
+
+        {error ? <p className="error">{error}</p> : null}
+
+        <div className="actions">
+          <button
+            className="btn primary"
+            onClick={onStart}
+            disabled={loading || !ready}
+            type="button"
+          >
+            <span>{loading ? "Loading" : "Begin Reflection"}</span>
+            <span className="arrow" aria-hidden="true">&rarr;</span>
+          </button>
+        </div>
+      </div>
+
+      <aside className="landingArt">
+        <img
+          className="landingArtImg"
+          src="/hero-image.jpg"
+          alt="A small cairn of smooth river stones and a single plumeria blossom, set in raked circular patterns of pale sand."
+          loading="eager"
+          decoding="async"
+        />
+      </aside>
+    </div>
+  );
+}
+
+const SPECS = [
+  { label: "Length", value: "10 dilemmas" },
+  { label: "Time", value: "~2 minutes" },
+  { label: "Outcome", value: "A reading" }
+];
+
+function SpecsStrip() {
+  return (
+    <dl className="landingSpecs" aria-label="What to expect">
+      {SPECS.map(({ label, value }) => (
+        <div className="specsItem" key={label}>
+          <dt className="specsLabel">{label}</dt>
+          <dd className="specsValue">{value}</dd>
+        </div>
+      ))}
+    </dl>
+  );
+}
+
+const METHOD_STEPS = [
+  {
+    num: "I",
+    title: "Read the dilemma",
+    text: "One question at a time. No backtracking. The friction is the point."
+  },
+  {
+    num: "II",
+    title: "Choose what you would do",
+    text: "Each option corresponds to a different ethical lens. You are not graded."
+  },
+  {
+    num: "III",
+    title: "Receive your reading",
+    text: "A headline, a written summary, and three to four themes ranked by emphasis."
+  }
+];
+
+function Method() {
+  return (
+    <section className="method" aria-labelledby="method-heading">
+      <header className="methodHeader">
+        <span className="kicker">The Method</span>
+        <h2 id="method-heading" className="methodHeadline">
+          Three quiet steps,<br />
+          a single clear reading.
+        </h2>
+      </header>
+
+      <ol className="methodSteps">
+        {METHOD_STEPS.map(({ num, title, text }) => (
+          <li className="methodStep" key={num}>
+            <span className="methodNum" aria-hidden="true">{num}</span>
+            <div className="methodBody">
+              <h3 className="methodTitle">{title}</h3>
+              <p className="methodText">{text}</p>
+            </div>
+          </li>
+        ))}
+      </ol>
+    </section>
+  );
+}
