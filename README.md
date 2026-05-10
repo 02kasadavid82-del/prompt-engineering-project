@@ -11,6 +11,12 @@ A short walkthrough of the app — start screen, quiz flow, and the AI-generated
   <a href="./screen-recording/prompt-engineering-dilemma.mp4">Download the demo (~16 MB)</a>.
 </video>
 
+
+https://github.com/user-attachments/assets/f95c1bf2-df5e-4c50-9ab2-34d88eb890ee
+
+
+
+
 > If the video does not play inline, open [`screen-recording/prompt-engineering-dilemma.mp4`](./screen-recording/prompt-engineering-dilemma.mp4) directly.
 
 ## Prerequisites
