@@ -2,6 +2,17 @@
 
 Minimal ethical dilemma quiz (10 questions) with AI-based analysis.
 
+## Demo
+
+A short walkthrough of the app — start screen, quiz flow, and the AI-generated reading.
+
+<video src="./screen-recording/prompt-engineering-dilemma.mp4" controls width="100%">
+  Your browser does not support inline video.
+  <a href="./screen-recording/prompt-engineering-dilemma.mp4">Download the demo (~16 MB)</a>.
+</video>
+
+> If the video does not play inline, open [`screen-recording/prompt-engineering-dilemma.mp4`](./screen-recording/prompt-engineering-dilemma.mp4) directly.
+
 ## Prerequisites
 - Node.js 18+
 - An OpenAI API key
